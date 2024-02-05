@@ -35,267 +35,6 @@
     <link rel="stylesheet" href="css/style.css" />
 
     <title>Reporte Agrícola | 2024</title>
-
-    <style>
-      :root {
-        scroll-behavior: smooth;
-        scroll-padding-top: 1em;
-      }
-
-      .imageContainer img {
-        max-width: 100%;
-      }
-
-      body {
-        color: #414042;
-        font-family: "Montserrat", sans-serif;
-        font-size: 16pt;
-      }
-
-      .centrar {
-        margin: auto;
-        display: block;
-      }
-
-      hr {
-        height: 0;
-        border: 0;
-        border-top-color: currentcolor;
-        border-top-style: none;
-        border-top-width: 0px;
-        border-top: 0.75mm solid;
-        color: #365478;
-      }
-
-      .flex-column {
-        max-width: 260px;
-      }
-
-      img {
-        margin: 5px;
-      }
-
-      .scale {
-        transform: scaleY(1.05);
-        padding-top: 5px;
-      }
-
-      @import url(https://fonts.googleapis.com/css?family=Montserrat:300,400,700);
-      @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
-
-      /* Override UGG site */
-      #main {
-        width: 100%;
-        padding: 0;
-      }
-      .content-asset p {
-        margin: 0 auto;
-      }
-      .breadcrumb {
-        display: none;
-      }
-
-      /* Helpers */
-      /**************************/
-      .margin-top-10 {
-        padding-top: 10px;
-      }
-      .margin-bot-10 {
-        padding-bottom: 10px;
-      }
-
-      /* Typography */
-      /**************************/
-      #parallax-world-of-ugg h1 {
-        font-family: "Montserrat", sans-serif;
-        font-size: 24px;
-        font-weight: 400;
-        text-transform: uppercase;
-        color: black;
-        padding: 0;
-        margin: 0;
-      }
-      #parallax-world-of-ugg h2 {
-        font-family: "Montserrat", sans-serif;
-        font-size: 70px;
-        letter-spacing: 10px;
-        text-align: center;
-        color: white;
-        font-weight: 400;
-        text-transform: uppercase;
-        z-index: 10;
-        opacity: 0.9;
-      }
-      #parallax-world-of-ugg h3 {
-        font-family: "Montserrat", sans-serif;
-        font-size: 16px;
-        line-height: 0;
-        font-weight: 400;
-        letter-spacing: 8px;
-        text-transform: uppercase;
-        color: black;
-      }
-      #parallax-world-of-ugg p {
-        font-family: "Montserrat", sans-serif;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 24px;
-      }
-      .first-character {
-        font-weight: 400;
-        float: left;
-        font-size: 84px;
-        line-height: 64px;
-        padding-top: 4px;
-        padding-right: 8px;
-        padding-left: 3px;
-        font-family: "Source Sans Pro", sans-serif;
-      }
-
-      .sc {
-        color: #3b8595;
-      }
-      .ny {
-        color: #3d3c3a;
-      }
-      .atw {
-        color: #c48660;
-      }
-
-      /* Section - Title */
-      /**************************/
-      #parallax-world-of-ugg .title {
-        background: white;
-        padding: 60px;
-        margin: 0 auto;
-        text-align: center;
-      }
-      #parallax-world-of-ugg .title h1 {
-        font-size: 35px;
-        letter-spacing: 8px;
-      }
-
-      /* Section - Block */
-      /**************************/
-      #parallax-world-of-ugg .block {
-        background: white;
-        padding: 60px;
-        width: 820px;
-        margin: 0 auto;
-        text-align: justify;
-      }
-      #parallax-world-of-ugg .block-gray {
-        background: #f2f2f2;
-        padding: 60px;
-      }
-      #parallax-world-of-ugg .section-overlay-mask {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: black;
-        opacity: 0.7;
-      }
-
-      /* Section - Parallax */
-      /**************************/
-      #parallax-world-of-ugg .parallax-one {
-        padding-top: 300px;
-        padding-bottom: 200px;
-        overflow: hidden;
-        position: relative;
-        width: 100%;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/plantas/Quilamuta_3.png);
-        background-attachment: fixed;
-        background-size: cover;
-        -moz-background-size: cover;
-        -webkit-background-size: cover;
-        background-repeat: no-repeat;
-        background-position: top center;
-      }
-
-      /* Section - Parallax */
-      /**************************/
-      #parallax-world-of-ugg .parallax-two {
-        padding-top: 100px;
-        padding-bottom: 200px;
-        overflow: hidden;
-        position: relative;
-        width: 100%;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/plantas/subsole.png);
-        background-attachment: fixed;
-        background-size: cover;
-        -moz-background-size: cover;
-        -webkit-background-size: cover;
-        background-repeat: no-repeat;
-        background-position: top center;
-      }
-      /* Extras */
-      /**************************/
-      #parallax-world-of-ugg .line-break {
-        border-bottom: 1px solid black;
-        width: 150px;
-        margin: 0 auto;
-      }
-
-      /* Media Queries */
-      /**************************/
-      @media screen and (max-width: 959px) and (min-width: 768px) {
-        #parallax-world-of-ugg .block {
-          padding: 40px;
-          width: 620px;
-        }
-      }
-      @media screen and (max-width: 767px) {
-        #parallax-world-of-ugg .block {
-          padding: 30px;
-          width: 420px;
-        }
-        #parallax-world-of-ugg h2 {
-          font-size: 30px;
-        }
-        #parallax-world-of-ugg .block {
-          padding: 30px;
-        }
-        #parallax-world-of-ugg .parallax-one {
-          padding-top: 100px;
-          padding-bottom: 100px;
-        }
-      }
-      @media screen and (max-width: 479px) {
-        #parallax-world-of-ugg .block {
-          padding: 30px 15px;
-          width: 290px;
-        }
-      }
-
-      h2.sidelines {
-        overflow: hidden;
-        text-align: center;
-      }
-
-      h2.sidelines:before,
-      h2.sidelines:after {
-        background-color: #fff;
-        content: "";
-        display: inline-block;
-        height: 1px;
-        position: relative;
-        vertical-align: middle;
-        width: 20%;
-      }
-
-      h2.sidelines:before {
-        right: 0.5em;
-        margin-left: -50%;
-      }
-
-      h2.sidelines:after {
-        left: 0.5em;
-        margin-right: -50%;
-      }
-    </style>
   </head>
   <body>
     <div class="site-mobile-menu site-navbar-target">
@@ -346,7 +85,7 @@
           <p style="color: white; text-align: center; font-size: 20px">2024</p>
           <br />
           <h2 class="sidelines" style="text-align: center; font-size: 30px">
-            <span>NOMBRE EMPRESA</span>
+            <span signal="nombreEmpresa"></span>
           </h2>
         </div>
       </div>
@@ -394,13 +133,14 @@
             <div class="col-md-12">
               <br />
 
-              <h2>Nombre Empresa</h2>
+              <h2 signal="nombreEmpresa" style="text-transform: uppercase"></h2>
               <br />
 
               <p align="justify">
-                Queremos compartir contigo más sobre tus proyectos. Ubicada en la comuna de <strong>COMUNA</strong> fue la primera planta de
-                <strong>NOMBRE DEL SOCIO</strong> empezó a generar energía en <strong>MES Y AÑO</strong>. Hoy en día cuentan con <strong>CANTIDAD DE PLANTAS</strong> plantas
-                fotovoltáicas implementadas, generando en total <strong>kWh GENERADOS</strong> desde día 1 Enero hasta el 31 de Diciembre 2023 junto a Solarity.
+                Queremos compartir contigo más sobre tus proyectos. Ubicada en la comuna de <span signal="comuna"></span>, fue la primera planta de
+                <strong signal="nombreEmpresa"></strong> empezó a generar energía en <strong signal="mes"></strong> de <strong signal="anio"></strong>. Hoy en día cuentan con
+                <strong signal="cantidadPlantas"></strong> plantas fotovoltáicas implementadas, generando en total <strong signal="generacion"></strong> desde día 1 Enero hasta el
+                31 de Diciembre 2023 junto a Solarity.
               </p>
             </div>
           </div>
@@ -417,13 +157,13 @@
             <br />
 
             <select class="selectpicker">
-              <option value="">--Todas las plantas--</option>
-              <option value="Planta_1">Planta 1</option>
-              <option value="Planta_2">Planta 2</option>
-              <option value="Planta_3">Planta 3</option>
-              <option value="Planta_4">Planta 4</option>
-              <option value="Planta_5">Planta 5</option>
-              <option value="Planta_6">Planta 6</option>
+              <option value="todoCombinado">--Todas las plantas--</option>
+              <option value="wattsChillan">Watts Chillán</option>
+              <option value="wattsLinares">Watts Linares</option>
+              <option value="wattsLonquen">Watts Lonquen</option>
+              <option value="wattsOsornoA">Watts Osorno A</option>
+              <option value="wattsOsornoB">Watts Osorno B</option>
+              <option value="wattsSanBernardo">Watts San Bernardo</option>
             </select>
           </div>
         </div>
@@ -432,40 +172,40 @@
           <div class="row">
             <div class="col-md-12">
               <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-6">
                   <h4>PLANTAS</h4>
                   <hr />
-                  <p>5</p>
+                  <p signal="cantidadPlantas"></p>
                 </div>
-                <div class="col-md-4">
+
+                <div class="col-md-6">
                   <h4>POTENCIA TOTAL</h4>
                   <hr />
-                  <p>245,19 kWp</p>
-                </div>
-                <div class="col-md-4">
-                  <h4>ENERGÍA GENERADA</h4>
-                  <hr />
-                  <p>245,19 kWp</p>
+                  <p><span signal="potenciaTotal"></span> kWp</p>
                 </div>
               </div>
+
               <div class="row">
+                <div class="col-md-6">
+                  <h4>TOTAL 2022</h4>
+                  <hr />
+
+                  <div class="row">
+                    <div class="col-md-6">
+                      <p><span signal="total2022"></span> MWh</p>
+                    </div>
+                  </div>
+                </div>
+
                 <div class="col-md-6">
                   <h4>TOTAL 2023</h4>
                   <hr />
-                  <div class="row">
-                    <div class="col-md-6">
-                      <h5>
-                        <strong>ENERGÍA</strong>
-                      </h5>
-                      <p>346 MWh*</p>
-                    </div>
-                  </div>
+                  <p><span signal="total2023"></span> MWh</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
         <hr />
 
         <!-- Bar Chart - START -->
@@ -508,8 +248,9 @@
 
               <p align="justify">
                 La energía renovable generada desde la implementación a diciembre 2023 equivale a aproximadamente
-                <strong>XX</strong> Casas iluminadas, <strong>XX</strong>toneladas de CO2 sin emitiry <strong>XX</strong> toneladas de reiduos recicladas. Gracias por confiar en
-                Solarity para tus proyectos de descarbonización, en caso de necesitar más información de las plantas en tus dependencias haznos saber.
+                <strong signal="casas">XX</strong> Casas iluminadas, <strong signal="co2Tons">XX</strong>toneladas de CO2 sin emitir y
+                <strong signal="residueTons">XX</strong> toneladas de residuos recicladas. Gracias por confiar en Solarity para tus proyectos de descarbonización, en caso de
+                necesitar más información de las plantas en tus dependencias haznos saber.
               </p>
 
               <div class="container-fluid" style="text-align: center; margin-top: 5em; margin-bottom: 5em">
@@ -568,7 +309,9 @@
                   <div class="row">
                     <div class="col-md-4"></div>
                     <div class="col-md-4 mt-4">
-                      <button type="button" class="btn btn-success btn-lg btn-block" style="font-size: 16px; font-weight: bold; color: #ffff">Contáctenos</button>
+                      <a href="https://solarity.cl/#abrir-contactos" target="_blank">
+                        <button type="button" class="btn btn-success btn-lg btn-block" style="font-size: 16px; font-weight: bold; color: #ffff">Contáctenos</button>
+                      </a>
                     </div>
                     <div class="col-md-4"></div>
                   </div>
@@ -605,10 +348,13 @@
 
     <!-- Scripts al final del cuerpo -->
     <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/shieldui-all.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.sticky.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/signal.js"></script>
 
     <script type="text/javascript">
       jQuery(function ($) {
@@ -616,10 +362,112 @@
         var data2 = [3, 9, 12, 14, 22, 32, 45, 12, 67, 45, 55, 7];
         var data3 = [23, 19, 11, 134, 242, 352, 435, 22, 637, 445, 555, 57];
 
+        const wattsLinares = {
+          total2022: 495612323,
+          potenciaTotal: 503.51,
+          generacion: [86190259, 65428952, 52221372, 40008091, 25466619, 18612653, 21155226, 33069466, 43725030, 53947202, 53965217, 63050049],
+        };
+        const wattsOsornoA = {
+          total2022: 595979973,
+          potenciaTotal: 633.64,
+          generacion: [70919901, 54183359, 33483421, 22946630, 21701572, 14561150, 16800420, 29750858, 43882914, 59685675, 59453991, 70627353],
+        };
+        const wattsLonquen = {
+          total2022: 1340316528,
+          potenciaTotal: 1_001.29,
+          generacion: [170215979, 141970400, 134335732, 76128719, 63500923, 43228936, 55032845, 72954486, 77557368, 119907052, 152023701, 180879274],
+        };
+        const wattsSanBernardo = {
+          total2022: 1250130610,
+          potenciaTotal: 1_026.6,
+          generacion: [154532260, 148631425, 140175983, 85937544, 68549783, 40767436, 55178386, 77374868, 77263030, 119333589, 150437872, 172055908],
+        };
+        const wattsChillan = {
+          total2022: 738291304,
+          potenciaTotal: 565.18,
+          generacion: [98715000, 79844691, 69234908, 42191670, 35261771, 24834983, 27019253, 37351377, 47876065, 76292817, 89085540, 95404459],
+        };
+        const wattsOsornoB = {
+          total2022: 239887920,
+          potenciaTotal: 253.31,
+          generacion: [30571947, 27053979, 21649549, 13009503, 7698518.0, 5838818.0, 7367940.0, 9740859.0, 14678147, 23102315, 28784826, 39531824],
+        };
+        const plantas = { wattsLinares, wattsOsornoA, wattsLonquen, wattsSanBernardo, wattsChillan, wattsOsornoB };
+
+        let newValue;
+        const generacionCombinada = [];
+        for (let mes = 0; mes < 12; mes++) {
+          newValue = 0;
+          for (const gen of Object.values(plantas).map((planta) => planta.generacion)) {
+            newValue += gen[mes];
+          }
+          generacionCombinada.push(newValue);
+        }
+
+        const todoCombinado = {
+          total2022: Object.values(plantas).reduce((total, planta) => total + planta.total2022, 0),
+          potenciaTotal: Object.values(plantas).reduce((total, planta) => total + planta.potenciaTotal, 0),
+          generacion: generacionCombinada,
+        };
+
+        plantas.todoCombinado = todoCombinado;
+
+        const [nombreEmpresa, setNombreEmpresa] = useSignal("nombreEmpresa", "Watts");
+        const [comuna, setComuna] = useSignal("comuna", "Linares");
+        const [cantidadPlantas, setCantidadPlantas] = useSignal("cantidadPlantas", Object.keys(plantas).length - 1);
+        const [potenciaTotal, setPotenciaTotal] = useSignal("potenciaTotal", Math.round(todoCombinado.potenciaTotal).toLocaleString());
+        const [total2022, setTotal2022] = useSignal("total2022", Math.round(plantas.todoCombinado.total2022 / 1e6).toLocaleString());
+        const [total2023, setTotal2023] = useSignal("total2023", Math.round(plantas.todoCombinado.generacion.reduce((tot, gen) => tot + gen, 0) / 1e6).toLocaleString());
+        const [casas, setCasas] = useSignal("casas", Math.round(total2023() * 8.42));
+
+        useSignal("mes", "Abril");
+        useSignal("anio", "2020");
+
+        const selectorPlanta = document.querySelector(".selectpicker");
+        const meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+
+        selectorPlanta.addEventListener("change", () => {
+          const { value } = selectorPlanta;
+          const planta = plantas[value];
+          setPotenciaTotal(Math.round(planta.potenciaTotal).toLocaleString());
+          if (value === "todoCombinado") setCantidadPlantas(Object.keys(plantas).length - 1);
+          else setCantidadPlantas(1);
+          setTotal2022(Math.round(planta.total2022 / 1e6).toLocaleString());
+          setTotal2023(Math.round(planta.generacion.reduce((total, gen) => total + gen, 0) / 1e6).toLocaleString());
+
+          setCasa;
+
+          $("#chart1").shieldChart({
+            exportOptions: {
+              image: false,
+              print: false,
+            },
+            axisX: {
+              title: { text: "Mes" },
+              categoricalValues: meses,
+            },
+            axisY: {
+              title: {
+                text: "Break-Down for selected quarter",
+              },
+            },
+            dataSeries: [
+              {
+                seriesType: "bar",
+                data: planta.generacion,
+              },
+            ],
+          });
+        });
+
         $("#chart1").shieldChart({
           exportOptions: {
             image: false,
             print: false,
+          },
+          axisX: {
+            title: { text: "Mes" },
+            categoricalValues: meses,
           },
           axisY: {
             title: {
@@ -629,10 +477,12 @@
           dataSeries: [
             {
               seriesType: "bar",
-              data: data1,
+              data: todoCombinado.generacion,
             },
           ],
         });
+
+        // TODO: ver nombres y unidades de eje X e Y
 
         $("#chart3").shieldChart({
           exportOptions: {
