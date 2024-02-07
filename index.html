@@ -102,19 +102,15 @@
             <div id="map" style="width: 100%; height: 600px"></div>
           </div>
           <div class="col-md-6">
-            <h4>
-              <strong>¡Este año tu organización empezó a contar con la mejor energía!</strong>
-            </h4>
-
             <br />
 
             <p align="justify" style="font-size: 20px">
-              Los paneles solares que instalamos en tu empresa generan energía limpia para tus colaboradores. Gracias por permitirnos acompañarte en el camino de la
-              descarbonización y por contribuir al cuidado del medio ambiente. Este es el primer boletín que recibirás, en él encontrarás toda la información relacionada a la
-              generación de energía, impacto positivo y datos relevantes sobre los proyectos Solarity en tu empresa.
+              Hace diez años, nació Solarity con el objetivo de entregar la mejor energía a organizaciones a lo largo de Chile. Hoy son <strong>más de 140 proyectos</strong> los
+              que generan la mejor energía, generando un impacto positivo en el mundo. Te agradecemos por permitirnos acompañarte este <strong>2023</strong> en tu camino por la
+              descarbonización y entregar la mejor energía a tus equipos de trabajo, es eso lo que nos mueve día a día.
             </p>
 
-            <p align="justify" style="font-size: 20px">Bienvenidos al camino de la transición energética y la descarbonización.</p>
+            <p align="justify" style="font-size: 20px">En este boletín te compartimos el impacto que tus proyectos han tenido en el cuidado del planeta.</p>
           </div>
         </div>
       </div>
@@ -248,9 +244,9 @@
 
               <p align="justify">
                 La energía renovable generada desde la implementación a diciembre 2023 equivale a aproximadamente
-                <strong signal="casas">XX</strong> Casas iluminadas, <strong signal="co2Tons">XX</strong>toneladas de CO2 sin emitir y
-                <strong signal="residueTons">XX</strong> toneladas de residuos recicladas. Gracias por confiar en Solarity para tus proyectos de descarbonización, en caso de
-                necesitar más información de las plantas en tus dependencias haznos saber.
+                <strong signal="casas">XX</strong> Casas iluminadas, <strong signal="co2">XX</strong> toneladas de CO2 sin emitir y <strong signal="residuos">XX</strong> toneladas
+                de residuos recicladas. Gracias por confiar en Solarity para tus proyectos de descarbonización, en caso de necesitar más información de las plantas en tus
+                dependencias haznos saber.
               </p>
 
               <div class="container-fluid" style="text-align: center; margin-top: 5em; margin-bottom: 5em">
@@ -258,21 +254,21 @@
                   <div class="col-md-4">
                     <img width="100px" height="auto" alt="Bootstrap Image Preview" src="images/iconos-02.png" />
                     <h2>
-                      <strong>45</strong>
+                      <strong signal="casas">45</strong>
                     </h2>
                     <p>CASAS ILUMINADAS</p>
                   </div>
                   <div class="col-md-4">
                     <img width="100px" height="auto" alt="Bootstrap Image Preview" src="images/iconos-03.png" />
                     <h2>
-                      <strong>245</strong>
+                      <strong signal="co2">245</strong>
                     </h2>
                     <p>TONELADAS DE C02 EVITADAS</p>
                   </div>
                   <div class="col-md-4">
                     <img width="100px" height="auto" alt="Bootstrap Image Preview" src="images/iconos-05.png" />
                     <h2>
-                      <strong>83</strong>
+                      <strong signal="residuos">83</strong>
                     </h2>
                     <p>TONELADAS DE RESIDUOS RECICLADAS</p>
                   </div>
@@ -363,31 +359,37 @@
         var data3 = [23, 19, 11, 134, 242, 352, 435, 22, 637, 445, 555, 57];
 
         const wattsLinares = {
+          total: 0,
           total2022: 495612323,
           potenciaTotal: 503.51,
           generacion: [86190259, 65428952, 52221372, 40008091, 25466619, 18612653, 21155226, 33069466, 43725030, 53947202, 53965217, 63050049],
         };
         const wattsOsornoA = {
+          total: 0,
           total2022: 595979973,
           potenciaTotal: 633.64,
           generacion: [70919901, 54183359, 33483421, 22946630, 21701572, 14561150, 16800420, 29750858, 43882914, 59685675, 59453991, 70627353],
         };
         const wattsLonquen = {
+          total: 0,
           total2022: 1340316528,
           potenciaTotal: 1_001.29,
           generacion: [170215979, 141970400, 134335732, 76128719, 63500923, 43228936, 55032845, 72954486, 77557368, 119907052, 152023701, 180879274],
         };
         const wattsSanBernardo = {
+          total: 0,
           total2022: 1250130610,
           potenciaTotal: 1_026.6,
           generacion: [154532260, 148631425, 140175983, 85937544, 68549783, 40767436, 55178386, 77374868, 77263030, 119333589, 150437872, 172055908],
         };
         const wattsChillan = {
+          total: 0,
           total2022: 738291304,
           potenciaTotal: 565.18,
           generacion: [98715000, 79844691, 69234908, 42191670, 35261771, 24834983, 27019253, 37351377, 47876065, 76292817, 89085540, 95404459],
         };
         const wattsOsornoB = {
+          total: 0,
           total2022: 239887920,
           potenciaTotal: 253.31,
           generacion: [30571947, 27053979, 21649549, 13009503, 7698518.0, 5838818.0, 7367940.0, 9740859.0, 14678147, 23102315, 28784826, 39531824],
@@ -405,6 +407,7 @@
         }
 
         const todoCombinado = {
+          total: 0,
           total2022: Object.values(plantas).reduce((total, planta) => total + planta.total2022, 0),
           potenciaTotal: Object.values(plantas).reduce((total, planta) => total + planta.potenciaTotal, 0),
           generacion: generacionCombinada,
@@ -413,13 +416,15 @@
         plantas.todoCombinado = todoCombinado;
 
         const [nombreEmpresa, setNombreEmpresa] = useSignal("nombreEmpresa", "Watts");
-        const [comuna, setComuna] = useSignal("comuna", "Linares");
         const [cantidadPlantas, setCantidadPlantas] = useSignal("cantidadPlantas", Object.keys(plantas).length - 1);
         const [potenciaTotal, setPotenciaTotal] = useSignal("potenciaTotal", Math.round(todoCombinado.potenciaTotal).toLocaleString());
         const [total2022, setTotal2022] = useSignal("total2022", Math.round(plantas.todoCombinado.total2022 / 1e6).toLocaleString());
         const [total2023, setTotal2023] = useSignal("total2023", Math.round(plantas.todoCombinado.generacion.reduce((tot, gen) => tot + gen, 0) / 1e6).toLocaleString());
         const [casas, setCasas] = useSignal("casas", Math.round(total2023() * 8.42));
+        const [co2, setCo2] = useSignal("co2", Math.round(total2023() * 70.9));
+        const [residuos, setResiduos] = useSignal("residuos", Math.round(total2023() * 24.1));
 
+        useSignal("comuna", "Linares");
         useSignal("mes", "Abril");
         useSignal("anio", "2020");
 
@@ -435,7 +440,7 @@
           setTotal2022(Math.round(planta.total2022 / 1e6).toLocaleString());
           setTotal2023(Math.round(planta.generacion.reduce((total, gen) => total + gen, 0) / 1e6).toLocaleString());
 
-          setCasa;
+          setCasas(Math.round(((planta.generacion.reduce((tot, gen) => tot + gen, 0) + planta.total2022) * 8.42) / 1e8));
 
           $("#chart1").shieldChart({
             exportOptions: {
